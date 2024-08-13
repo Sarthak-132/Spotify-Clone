@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #101010;
+    --Third-color: #121212;
+    --fourth-color: #1F1F1F;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+}
+
+
+/* main container  */
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* left container */
+
+.Left-container{
+    width: 21.5%;
+    height: 100%;
+    /* border: 2px solid white; */
+    position: sticky;
+    background: rgb(0, 0, 0);
+}
+
+
+/* left container part 1 */
+
+.left-container-part-1{
+    background-color: var(--Third-color);
+    height: 21%;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.6em 0.8em;
+}
+
+.left-container-part-1 .logo{
+    width: 6.8em; 
+}
+
+.left-container-part-1 .logo img{
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.left-container-part-1 ul{
+    list-style-type: none;
+}
+
+.left-container-part-1 ul li {
+    padding: 0.7em 0.8em;
+}
+
+.left-container-part-1 ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.0em;
+}
+
+.left-container-part-1 ul li a span{
+    color: #fff;
+    margin-right: 0.5em;
+}
+
+.left-container-part-1 ul li a span i{
+    margin-right: 0.5em;
+    font-size: 1.3em;
+}
+
+.bold span{
+    opacity: 0.6;
+}
+
+.bold span:hover{
+    opacity: 1;
+}
+
+.home:hover{
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+}
+
+
+.search:hover{
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+    
+}
+
+/* left container part 2 */
+
+
+
+
+
+
+
+
+/* Right container */
+
+.Right-container{
+    width: calc(79.5% - 0%);
+    position: relative;
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #1E1E1E 0%, #121212 21%);
+
+}
