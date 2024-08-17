@@ -138,7 +138,13 @@ html,body{
 
 /* left container part 2 */
 
-
+.left-container-part-2{
+    background-color: var(--Third-color);
+    height: 66%;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.6em 0.8em;
+}
 
 
 
@@ -148,9 +154,59 @@ html,body{
 /* Right container */
 
 .Right-container{
-    width: calc(79.5% - 0%);
+    width: calc(78.5% - 0%);
     position: relative;
+    height: 88%;
     background-color: #000000;
     background-image: linear-gradient(180deg, #1E1E1E 0%, #121212 21%);
-
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.4rem 0.5rem 0rem;
+    padding: 0.6em 0.8em;
+    
 }
+
+
+
+/*  footer  */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 99.1%;
+    height: 9%;
+    background-color: var(--fourth-color);
+    margin: 0.5rem 2rem 0.5rem 0.5rem;
+    bottom: 0;  
+    background: rgb(174,41,150);
+    background: -moz-linear-gradient(90deg, rgba(174,41,150,0.6924019607843137) 0%, rgba(81,154,244,0.7344187675070029) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(174,41,150,0.6924019607843137) 0%, rgba(81,154,244,0.7344187675070029) 100%);
+    background: linear-gradient(90deg, rgba(174,41,150,0.6924019607843137) 0%, rgba(81,154,244,0.7344187675070029) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ae2996",endColorstr="#519af4",GradientType=1);
+    padding: 0rem 1rem;
+}
+
+.footer-title{
+    color: #FFFCFC;
+}
+
+.footer-content{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    padding: 0.1rem;
+}
+
+.content-line{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.signUp-btn button{
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    border: 0.2rem solid rgb(255, 255, 255);
+}
+
