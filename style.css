@@ -146,6 +146,96 @@ html,body{
     padding: 0.6em 0.8em;
 }
 
+.library{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B3B3B3;
+    font-size: 1rem;
+    padding: 0.7rem;
+}
+
+.icon-library span i{
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: 0.6rem;
+}
+
+.icon-library span{
+    cursor: pointer;
+}
+
+.icon-library span:hover{
+    color: #fff;
+}
+
+.plus-icon span i:hover{
+    color: #fff;
+}
+
+.plus-icon span i{
+    cursor: pointer;
+}
+
+.icon-library{
+    position: relative;
+    display: inline-block;
+}
+
+.collapse-content{
+    display: none;
+    position: absolute;
+    top: -150%;
+    left: -40%;
+    transform: translateX(30%);
+    padding: 0.3rem;
+    background-color: #333232;
+    color: #f1f1f1;
+    border: 0.1rem solid #333232;
+    border-radius: 0.3rem;
+}
+
+.plus-icon{
+    position: relative;
+    display: inline-block;
+}
+
+.collapse-plus-icon{
+        display: none;
+        position: absolute;
+        top: -230%;
+        left: -999%;
+        transform: translateX(21%);
+        padding: 0.3rem;
+        background-color: #333232;
+        color: #f1f1f1;
+        border: 0.1rem solid #333232;
+        border-radius: 0.3rem;
+    }
+  
+    
+.click-on .plus-click{
+    display: inline-block;
+}
+    
+.click-on{
+        display: none;
+        position: absolute;
+        top: 200%;
+        left: -1100%;
+        transform: translateX(0%);
+        padding: 0.7rem 0.7rem;
+        background-color: #333232;
+        color: #f1f1f1;
+        border: 0.1rem solid #333232;
+        border-radius: 0.3rem;
+        font-size: 1rem;
+        z-index: 30;
+}
+
+
+
 
 
 
