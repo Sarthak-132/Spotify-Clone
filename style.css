@@ -201,6 +201,7 @@ html,body{
     display: inline-block;
 }
 
+
 .collapse-plus-icon{
         display: none;
         position: absolute;
@@ -212,7 +213,7 @@ html,body{
         color: #f1f1f1;
         border: 0.1rem solid #333232;
         border-radius: 0.3rem;
-    }
+}
   
     
 .click-on .plus-click{
@@ -234,6 +235,8 @@ html,body{
         z-index: 30;
 }
 
+
+/* scroll bar in paragraph */
 
 
 
