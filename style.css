@@ -44,7 +44,7 @@
     --fourth-color: #1F1F1F;
 }
 
-html,body{
+html, body{
     width: 100%;
     height: 100%;
     background: var(--primary-color);
@@ -236,10 +236,119 @@ html,body{
 }
 
 
-/* scroll bar in paragraph */
+/* scroll bar in paragraph with content */
 
+.create-playlist{
+    background: var(--fourth-color);
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.4rem;
+    margin-top: 1.2rem;
+    border-radius: 0.5rem;
+}
 
+.sidebar-scrollbar{
+    height: 13.6rem;
+    overflow-y: auto;
+}
 
+.sidebar-scrollbar::-webkit-scrollbar{
+    background: transparent;
+    width: 0.8em;
+}
+
+.sidebar-scrollbar::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+.sidebar-scrollbar:hover::-webkit-scrollbar-thumb{
+    background: #5c5757;  
+}
+
+.sidebar-scrollbar:active::-webkit-scrollbar-thumb{
+    background: #B3B3B3;
+}
+
+.bold{
+    font-weight: bolder;
+    margin: 0.2rem 0rem 0.5rem 0rem;
+}
+
+.light-para{
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0.2rem 0rem 0.5rem 0rem;
+}
+
+.scroll-btn{
+    margin: 0.6rem 0rem 0.5rem 0rem;
+    padding: 0.5rem 1.2rem;
+    border: #fff;
+    border-radius: 0.9rem;
+    font-weight: bold;
+    outline: 0;
+    cursor: pointer;
+}
+
+.scroll-btn:hover{
+    transform: scale(1.1);
+}
+
+/* End part of left container  */
+
+.privacy{
+    margin: 0.2rem;
+}
+
+.privacy ul li a{
+    text-decoration: none;
+    color: #B3B3B3;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 0rem 0.4rem;
+}
+
+.privacy ul{
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.privacy ul li{
+    padding: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+.cookies a:hover{
+    text-decoration: underline;
+}
+
+.eng-btn{
+    margin: 1.8rem 1rem;
+}
+
+.eng-btn button{
+    padding: 0.3rem 0.7rem;
+    border: 0;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: 1px solid #818080;
+    border-radius: 0.9rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    /* border-radius: 1px; */
+}
+
+.eng-btn button i{
+    font-size: 1.2rem;
+    margin: 0.4rem 0.2rem;
+}
+
+.eng-btn button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 
 
@@ -307,6 +416,26 @@ html,body{
 }
 
 
+/* main content of right side container */
+
+/* Popular Artists */
+
+.spotify-playlist{
+    margin-top: 2.8rem;
+    color: #fff;
+}
+
+.card{
+    
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -359,56 +488,4 @@ html,body{
 
 .btn:hover{
     transform: scale(1.1);
-}
-
-.create-playlist{
-    background: var(--fourth-color);
-    color: #fff;
-    font-size: 1rem;
-    padding: 1rem;
-    margin-bottom: 1.4rem;
-    margin-top: 1.2rem;
-    border-radius: 0.5rem;
-}
-
-.sidebar-scrollbar{
-    height: 13.6rem;
-    overflow-y: auto;
-}
-
-.sidebar-scrollbar::-webkit-scrollbar{
-    background: transparent;
-    width: 0.8em;
-}
-
-.sidebar-scrollbar::-webkit-scrollbar-thumb{
-    background: transparent;
-}
-
-.sidebar-scrollbar:hover::-webkit-scrollbar-thumb{
-    background: #5c5757;  
-}
-
-.sidebar-scrollbar:active::-webkit-scrollbar-thumb{
-    background: #B3B3B3;
-}
-
-.bold{
-    font-weight: bolder;
-    margin: 0.2rem 0rem 0.5rem 0rem;
-}
-
-.light-para{
-    font-weight: 400;
-    font-size: 0.8rem;
-    margin: 0.2rem 0rem 0.5rem 0rem;
-}
-
-.scroll-btn{
-    margin: 0.6rem 0rem 0.5rem 0rem;
-    padding: 0.5rem 1.2rem;
-    border: #fff;
-    border-radius: 0.9rem;
-    font-weight: bold;
-    outline: 0;
 }
