@@ -361,7 +361,7 @@ html, body{
     width: calc(78.5% - 0%);
     position: relative;
     height: 88%;
-    background-image: linear-gradient(180deg, #1E1E1E 0%, #121212 21%);
+    background-image: linear-gradient(180deg, #313030 0%, #121212 21%);
     border-radius: 0.5rem;
     margin: 0.5rem 0.4rem 0.5rem 0rem;
     overflow-y: auto;
@@ -496,7 +496,7 @@ html, body{
 
 .card-content h5{
     font-size: 0.9rem;
-    color: grey;
+    color: #9b9a9a;
     font-weight: 500;
     padding-left: 1rem;
     padding-bottom: 0.3rem;
@@ -577,7 +577,73 @@ html, body{
     }
 }
 
-/* spotify playlist */
+/* Spotify playlist */
+
+
+.card-items-playlist .card-img-playlist img{
+    width: 100%;
+    height: 10.5rem;
+    border: 0;
+    outline: none;
+    border-radius: 1.3rem;
+    padding: 0.9rem;
+    object-fit: cover;
+}
+
+.card-items-playlist{
+    background-color: transparent;
+    margin: 0.2rem 0.2rem;
+    height: 14.8rem;
+    border-radius: 2px;
+    width: 95%;
+    position: relative;
+}
+
+.card-items-playlist:hover{
+    cursor: pointer;
+    background: var(--fourth-color);
+    border-radius: 0.4rem;
+    .play-btn span i{
+        display: block;
+        transform: scale(1.1);
+    }
+}
+
+.card-content h6{
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+/* SOCIAL AND OTHER LINKS */
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.7rem;
+}
+
+.section .section-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-columns{
+    margin: 0em 5.4em 0em 2em;
+}
+
+.col-links{
+    list-style-type: none;
+}
+
+.col-links li a{
+    text-decoration: none;
+    margin: 0.5em;
+    color: #939393;
+    
+}
 
 
 
