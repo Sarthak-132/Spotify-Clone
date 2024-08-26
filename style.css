@@ -435,7 +435,7 @@ html, body{
 /* Popular Artists */
 
 .spotify-playlist{
-    margin-top: 6rem;
+    margin-top: 5.8rem;
     color: #fff;
 }
 
@@ -444,6 +444,7 @@ html, body{
     font-size: 1.5rem;
     font-family:  roboto;
     font-weight: 700;
+    margin-top: 0.9rem;
 }
 
 .Artists h2:hover{
@@ -496,7 +497,7 @@ html, body{
 .card-content h5{
     font-size: 0.9rem;
     color: grey;
-    font-weight: 400;
+    font-weight: 500;
     padding-left: 1rem;
     padding-bottom: 0.3rem;
 }
@@ -510,6 +511,74 @@ html, body{
         transform: scale(1.1);
     }
 }
+
+
+/* Popular ALBUMS */
+
+
+.card-items-album .card-img-album img{
+    width: 100%;
+    height: 10.5rem;
+    border: 0;
+    outline: none;
+    border-radius: 1.3rem;
+    padding: 0.9rem;
+    object-fit: cover;
+}
+
+.card-items-album{
+    background-color: transparent;
+    margin: 0.2rem 0.2rem;
+    height: 15rem;
+    border-radius: 2px;
+    width: 95%;
+    position: relative;
+}
+
+.card-items-album:hover{
+    cursor: pointer;
+    background: var(--fourth-color);
+    border-radius: 0.4rem;
+    .play-btn span i{
+        display: block;
+        transform: scale(1.1);
+    }
+}
+
+
+/* Popular radio */
+
+.card-items-radio .card-img-radio img{
+    width: 100%;
+    height: 10.5rem;
+    border: 0;
+    outline: none;
+    border-radius: 1.3rem;
+    padding: 0.9rem;
+    object-fit: cover;
+}
+
+.card-items-radio{
+    background-color: transparent;
+    margin: 0.2rem 0.2rem;
+    height: 13.5rem;
+    border-radius: 2px;
+    width: 95%;
+    position: relative;
+}
+
+.card-items-radio:hover{
+    cursor: pointer;
+    background: var(--fourth-color);
+    border-radius: 0.4rem;
+    .play-btn span i{
+        display: block;
+        transform: scale(1.1);
+    }
+}
+
+/* spotify playlist */
+
 
 
 
