@@ -369,8 +369,22 @@ html, body{
 }
 
 .Right-container::-webkit-scrollbar {
-    display: none;
+    background: transparent;
+    width: 0.7em;
   }
+
+.Right-container::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+.Right-container:hover::-webkit-scrollbar-thumb{
+    background: #5c5757; 
+}
+
+.Right-container:active::-webkit-scrollbar-thumb{
+    background: #B3B3B3;
+}
+
 
 /* Navbar Section */
 
@@ -387,7 +401,6 @@ html, body{
     opacity: 1;
     z-index: 100;
 }
-
 
 
 .arrows i{
@@ -439,6 +452,11 @@ html, body{
     color: #fff;
 }
 
+.Artists{
+    display: flex;
+    justify-content: space-between; 
+}
+
 .Artists h2{
     padding: 0.8rem 1.5rem;
     font-size: 1.5rem;
@@ -447,7 +465,21 @@ html, body{
     margin-top: 0.9rem;
 }
 
+.Artists h6{
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    color: #9b9a9a;
+    font-family:  roboto;
+    font-weight: 700;
+    margin-top: 1.2rem;
+}
+
 .Artists h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Artists h6:hover{
     text-decoration: underline;
     cursor: pointer;
 }
@@ -465,6 +497,7 @@ html, body{
     border-radius: 2px;
     width: 95%;
     position: relative;
+    transition: all 0.2s ease;
 }
 
 .card-items .card-img img{
@@ -484,7 +517,6 @@ html, body{
     right: 8%;
     color: #34ff66;
     font-size: 3.5rem;
-    
 }
 
 .card-content h4{
@@ -542,6 +574,7 @@ html, body{
     .play-btn span i{
         display: block;
         transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -631,7 +664,11 @@ html, body{
 }
 
 .section-columns{
-    margin: 0em 5.4em 0em 2em;
+    margin: 0em 4em 0em 2em;
+}
+
+.section-columns div{
+    padding: 0.5em 1em;
 }
 
 .col-links{
@@ -640,14 +677,54 @@ html, body{
 
 .col-links li a{
     text-decoration: none;
-    margin: 0.5em;
     color: #939393;
-    
+}
+
+.col-links li{
+    margin: 0.6em 1em;
+}
+
+.col-links li a:hover{
+    color: #fff;
+    text-decoration: underline #939393;
+}
+
+
+/* social Links */
+
+.social-links{
+    margin-right: 1.9em ;
+}
+
+.social-links .links i{
+    color: #fff;
+    background: #212020;
+    padding: 0.7em;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-links .links i:hover{
+    background: #5f5b5b;
 }
 
 
 
+/* copyright */
 
+hr{
+    margin: 3em 2.8em;
+    outline: 0;
+    border: 0.1px solid #2a2929;   
+}
+
+.copyright{
+    margin-bottom: 5em;
+    margin-left: 2.1em;
+    font-size: 1.3em;
+    color: #939393;
+}
 
 
 
