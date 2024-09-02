@@ -385,6 +385,10 @@ html, body{
     background: #B3B3B3;
 }
 
+.spotify-play{
+    margin-top: 4.7rem;
+    color: #fff;
+}
 
 /* Navbar Section */
 
@@ -458,217 +462,57 @@ html, body{
 }
 
 
-/* main content of right side container */
 
-/* Popular Artists */
+/* playlist file */
 
-.spotify-playlist{
-    margin-top: 5.8rem;
-    color: #fff;
-}
-
-.Artists{
+.main-playlist{
+    width: 100%;
+    height: 36%;
     display: flex;
-    justify-content: space-between; 
+    color: #fff;
+    background: linear-gradient(#DC6658,#ac4e44, #823C34); 
+    margin-top: 0;
 }
 
-.Artists h2{
-    padding: 0.8rem 1.5rem;
-    font-size: 1.5rem;
-    font-family:  roboto;
-    font-weight: 700;
-    margin-top: 0.9rem;
+.card-playlist{
+    display: flex;  
+    align-items: start;
+    justify-content: space-between;
 }
 
-.Artists h6{
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-    color: #9b9a9a;
-    font-family:  roboto;
-    font-weight: 700;
+.img-playlist-card{
+    margin: 1em 1.5em 1em 1.5em;
+}
+
+.img-playlist-card img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.headings {
     margin-top: 1.2rem;
 }
 
-.Artists h2:hover{
-    text-decoration: underline;
-    cursor: pointer;
+#palylist-heading{
+    font-size: 0.8em;
 }
 
-.Artists h6:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.cards{
-    display: flex;
-    height: auto;
-    /* align-items:center; */
-}
-
-.card-items{
-    background-color: transparent;
-    margin: 0.2rem 0.2rem;
-    height: 14.5rem;
-    border-radius: 2px;
-    width: 95%;
-    position: relative;
-    transition: all 0.4s ease;
-}
-
-.card-items .card-img img{
-    width: 100%;
-    height: 10rem;
-    border: 0;
-    outline: none;
-    border-radius: 50%;
-    padding: 0.9rem;
-    object-fit: cover;
-}
-
-.play-btn span i{
-    display: none;
-    position: absolute;
-    top: 36%;
-    right: 8%;
-    color: #34ff66;
-    font-size: 3.5rem;
-}
-
-.card-content h4{
-    font-size: 1rem;
-    font-weight: 400;
-    padding-left: 1rem;
-    padding-bottom: 0.3rem;
-}
-
-.card-content h5{
-    font-size: 0.9rem;
-    color: #9b9a9a;
-    font-weight: 500;
-    padding-left: 1rem;
-    padding-bottom: 0.3rem;
-}
-
-.card-items:hover{
-    cursor: pointer;
-    background: var(--fourth-color);
-    border-radius: 0.4rem;
-    .play-btn span i{
-        display: block;
-        transform: scale(1.1);
-    }
+#heading-singer{
+    font-size: 8rem;
+    font-weight: bolder;
+    
 }
 
 
-/* Popular ALBUMS */
 
 
-.card-items-album .card-img-album img{
-    width: 100%;
-    height: 10.5rem;
-    border: 0;
-    outline: none;
-    border-radius: 1.3rem;
-    padding: 0.9rem;
-    object-fit: cover;
-}
-
-.card-items-album{
-    background-color: transparent;
-    margin: 0.2rem 0.2rem;
-    height: 15rem;
-    border-radius: 2px;
-    width: 95%;
-    position: relative;
-    transition: all 0.4s ease;
-}
-
-.card-items-album:hover{
-    cursor: pointer;
-    background: var(--fourth-color);
-    border-radius: 0.4rem;
-    .play-btn span i{
-        display: block;
-        transform: scale(1.1);
-        transition: all 0.5s ease-in-out;
-    }
-}
 
 
-/* Popular radio */
-
-.card-items-radio .card-img-radio img{
-    width: 100%;
-    height: 10.5rem;
-    border: 0;
-    outline: none;
-    border-radius: 1.3rem;
-    padding: 0.9rem;
-    object-fit: cover;
-}
-
-.card-items-radio{
-    background-color: transparent;
-    margin: 0.2rem 0.2rem;
-    height: 13.5rem;
-    border-radius: 2px;
-    width: 95%;
-    position: relative;
-    transition: all 0.4s ease;
-}
-
-.card-items-radio:hover{
-    cursor: pointer;
-    background: var(--fourth-color);
-    border-radius: 0.4rem;
-    .play-btn span i{
-        display: block;
-        transform: scale(1.1);
-    }
-}
-
-/* Spotify playlist */
 
 
-.card-items-playlist .card-img-playlist img{
-    width: 100%;
-    height: 10.5rem;
-    border: 0;
-    outline: none;
-    border-radius: 1.3rem;
-    padding: 0.9rem;
-    object-fit: cover;
-}
 
-.card-items-playlist{
-    background-color: transparent;
-    margin: 0.2rem 0.2rem;
-    height: 14.8rem;
-    border-radius: 2px;
-    width: 95%;
-    position: relative;
-    transition: all 0.4s ease;
-}
-
-.card-items-playlist:hover{
-    cursor: pointer;
-    background: var(--fourth-color);
-    border-radius: 0.4rem;
-    .play-btn span i{
-        display: block;
-        transform: scale(1.1);
-    }
-}
-
-.card-content h6{
-    font-size: 0.9rem;
-    color: #ffffff;
-    font-weight: 500;
-    padding-left: 1rem;
-    padding-bottom: 0.3rem;
-}
-
-/* SOCIAL AND OTHER LINKS */
+/* END Container */
 
 .section{
     display: flex;
@@ -751,6 +595,7 @@ hr{
 
 
 
+
 /*  footer  */
 
 .footer{
@@ -804,17 +649,3 @@ hr{
 
 
 
-/* playlist file */
-
-.main-playlist{
-    width: 100%;
-    height: auto;
-    display: flex;
-    color: #fff;
-}
-
-.main-playlist .card-playlist{
-    display: flex;  
-    align-items: center;
-    justify-content: space-between;
-}

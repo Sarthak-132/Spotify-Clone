@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="playlist.css">
+
+    <!-- link favicon -->
+    <link rel="icon"
+        href="https://imgs.search.brave.com/jdSgE6rbYbYNaAIotVL4SzlgSXXf9qKVcTTAlq9ylho/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy84/Lzg0L1Nwb3RpZnlf/aWNvbi5zdmc">
+
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- link remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- main container -->
+    <div class="container">
+
+        <!-- Left container -->
+
+        <div class="Left-container">
+
+            <!-- left container part 1 -->
+
+            <div class="left-container-part-1">
+
+                <div class="logo">
+                    <img src="images/logo-new.png" alt="logo">
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="">
+                            <span><i class="fa-solid fa-house"></i></span>
+                            <span class="home">Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="bold">
+                            <span><i class="ri-search-line"></i></span>
+                            <span class="search">Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- left container part 2 -->
+
+            <div class="left-container-part-2">
+
+                <!-- libarary icon and plus icon -->
+
+                <div class="library">
+                    <div class="icon-library" id="iconLibrary" onclick="plusFunction()">
+                        <span><i class="ri-book-shelf-line"></i></span>
+                        <span>Your Library</span>
+
+                        <!-- hover effect of library -->
+                        <div class="collapse-content" id="collapseContent">
+                            <h5>Collapse Your Library</h5>
+                        </div>
+                    </div>
+
+                    <!-- PLus icon -->
+
+                    <div class="plus-icon" id="plusIcon">
+                        <span><i class="fa-solid fa-plus"></i></span>
+
+                        <!-- hover effect of plus icon -->
+
+                        <div class="collapse-plus-icon" id="collapsePlusIcon">
+                            <h5>Create playlist or folder</h5>
+                        </div>
+
+                        <!-- onclick effect of plus-icon -->
+
+                        <div class="click-on" id="clickOn">
+                            <span><i class="ri-folder-music-fill"></i></span>
+                            <h5 class="plus-click">create a new playlist</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- scrollbar effect with content of left container part 2 -->
+
+                <div class="sidebar-scrollbar">
+                    <div class="create-playlist">
+                        <h4 class="bold">Create your first playlist</h4>
+                        <p class="light-para">It's easy, we'll help you</p>
+                        <button class="scroll-btn">Create Playlist</button>
+                    </div>
+                    <div class="create-playlist">
+                        <h4 class="bold">Let's find some podcasts to follow</h4>
+                        <p class="light-para">We'll keep you updated on new episodes</p>
+                        <button class="scroll-btn">Browse podcasts</button>
+                    </div>
+                </div>
+
+
+                <!-- end part of left container -->
+
+                <div class="privacy">
+                    <ul>
+                        <li>
+                            <a href="">Legal</a>
+                            <a href="">Safety & Privacy Center</a>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Cookies</a>
+                            <a href="">About Ads</a>
+                            <a href="">Accessibility</a>
+                        </li>
+                        <li class="cookies">
+                            <a href="">Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="eng-btn">
+                    <button> <i class="ri-global-line"></i>English</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- Right container -->
+
+
+        <div class="Right-container">
+
+            <!-- navbar section -->
+
+            <div class="navbar">
+                <div class="arrows">
+                    <i class="ri-arrow-left-s-line"></i>
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <div class="accountSet">
+                    <button type="button" class="nav-link sign-up"><a href="signUp.html">Sign up</a></button>
+                    <button type="button" class="nav-link login"><a href="Login.html">Login</a></button>
+                </div>
+            </div>
+
+
+            
+
+            <div class="spotify-play">
+
+
+
+                <!-- main playlist -->
+
+            <div class="main-playlist">
+
+                <div class="card-playlist">
+                    <div class="img-playlist-card">
+                        <img src="images/item-3.jpg" alt="card-image" style="height: 13rem; width: 13rem">
+                    </div>
+                    <div class="headings">
+                        <h6 class="heading-part" id="palylist-heading">Playlist</h6>
+                        <h1 id="heading-singer" class="heading-part">A.R.Rahman</h1>
+                        <h6 class="heading-part" id="sub-heading"> With Shankar Mahadevan, Anirudh Ravichander, Yuvan Shankar Raja and more</h6>
+                        <h6 class="heading-part" id="time-song">56,912 saves - 50 songs, about 4 hr</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+                <!-- Social and other links -->
+
+                <!-- main Section -->
+
+                <div class="section">
+
+                    <!-- links section -->
+
+                    <div class="section-links">
+                        <div class="section-columns">
+                            <div>Company</div>
+                            <ul class="col-links">
+                                <li><a href="">About</a></li>
+                                <li><a href="">Jobs</a></li>
+                                <li><a href="">For the Record</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="section-columns">
+                            <div>Communities</div>
+                            <ul class="col-links">
+                                <li><a href="">For Artists</a></li>
+                                <li><a href="">Developers</a></li>
+                                <li><a href="">Advertising</a></li>
+                                <li><a href="">Investors</a></li>
+                                <li><a href="">Vendors</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="section-columns">
+                            <div>Useful links</div>
+                            <ul class="col-links">
+                                <li><a href="">Support</a></li>
+                                <li><a href="">Free Mobile App</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="section-columns">
+                            <div>Spotify Plans</div>
+                            <ul class="col-links">
+                                <li><a href="">Premium Individual</a></li>
+                                <li><a href="">Premium Duo</a></li>
+                                <li><a href="">Premium Family</a></li>
+                                <li><a href="">Premium Student</a></li>
+                                <li><a href="">Spotify Free</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- social media links -->
+
+                    <div class="social-links">
+                        <div class="links">
+                            <a href="https://www.instagram.com/spotify"><i class="ri-instagram-line"></i></a>
+                            <a href="https://twitter.com/spotify"><i class="ri-twitter-fill"></i></a>
+                            <a href="https://www.facebook.com/Spotify"><i class="ri-facebook-circle-fill"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- copyright area  -->
+
+                <hr>
+
+                <div class="copyright">
+                    <h6>
+                        © 2024 Spotify AB
+                    </h6>
+                </div>
+            </div>
+
+        </div>
+            
+
+
+
+
+
+
+
+        <!-- footer section -->
+
+        <footer class="footer">
+            <div class="footer-title">
+                <p class="footer-content content-line">Preview of Spotify</p>
+                <p class="footer-content">Sign up to get unlimited songs and podcasts with occasional ads. No credit
+                    card needed.</p>
+            </div>
+            <div class="signUp-btn">
+                <button type="button" class="btn">Sign up free</button>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
