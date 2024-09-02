@@ -490,19 +490,86 @@ html, body{
     border-radius: 0.4rem;
 }
 
-.headings {
-    margin-top: 1.2rem;
-}
 
 #palylist-heading{
+    margin-top: 1.2rem;
     font-size: 0.8em;
 }
 
 #heading-singer{
     font-size: 8rem;
     font-weight: bolder;
+}
+
+#sub-heading{
+    color: #d0b2ad;
+    font-size: 0.9em;
+}
+
+#time-song{
+    font-size: 0.8em;
+    margin-top: 0.3em;
     
 }
+
+/* list of songs */
+
+.lists {
+    background: linear-gradient(#5b322d, #1f1f1f, #121212); 
+}
+
+.list-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+.start-buttons {
+    font-size: 2.2em;
+}
+
+.ri-play-circle-fill{
+    font-size: 1.2em;
+
+}
+
+.start-buttons i{
+    margin-left: 0.2em;
+    cursor: pointer;
+} 
+
+.end-buttons{
+    cursor: pointer;
+}
+
+
+/* title line */
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.hashtitle{
+    display: flex;
+    align-items: start;
+    margin-left: 2.4em;
+    color: var(--secondary-color);
+}
+
+.hashtitle i{
+    margin-right: 3em;
+}
+
+
+
+
+
+
+
 
 
 
