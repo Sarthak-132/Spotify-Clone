@@ -70,7 +70,9 @@ html, body{
     /* border: 2px solid white; */
     position: sticky;
     background: rgb(0, 0, 0);
+    transition: display 4s ease;
 }
+
 
 
 /* left container part 1 */
@@ -136,6 +138,15 @@ html, body{
     opacity: 1;
     border-bottom: 1px solid #fff;
     
+}
+
+.close-menu{
+    position: absolute;
+    right: 5%;
+    color: #fff;
+    top: 2%;
+    font-size: 1.5em;
+    display: none;
 }
 
 /* left container part 2 */
@@ -385,8 +396,17 @@ html, body{
     background: #B3B3B3;
 }
 
+/* menu bar */
 
-/* Navbar Section */
+.ri-menu-fill{
+    display: none;
+}
+
+/* .active{
+    display: block;
+} */
+
+/* Navbar Section */    
 
 .navbar{
     display: flex;
@@ -399,8 +419,10 @@ html, body{
     padding: 0rem 1.3rem;
     position: fixed;
     opacity: 1;
-    z-index: 100;
+    z-index: 10;
 }
+
+
 
 
 .arrows i{
@@ -502,6 +524,7 @@ html, body{
 .cards{
     display: flex;
     height: auto;
+    flex-shrink: shrink;
     /* align-items:center; */
 }
 

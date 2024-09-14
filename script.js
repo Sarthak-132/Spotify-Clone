@@ -39,6 +39,20 @@ plusIcon.onmouseout = () =>{
 
 
 
+const toggle = document.getElementById("menu-bar-toggle");
+
+toggle.addEventListener("click", () => {
+    document.querySelector(".Left-container").classList.add("active");
+});
+
+const close = document.getElementById("closed");
+
+close.addEventListener("click", () => {
+    document.querySelector(".Left-container").classList.remove("active");
+});
+
+
+
 
 
 
